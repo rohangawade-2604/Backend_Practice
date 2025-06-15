@@ -11,6 +11,13 @@ app.use((req, res, next) => {
 })
 
 
+let auth = true;
+if(auth){
+    res.send('you are not authorized with this')
+}
+else{
+    next();
+}
 
 
 app.get('/', (req, res) => {
