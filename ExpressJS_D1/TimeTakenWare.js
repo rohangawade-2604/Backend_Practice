@@ -11,6 +11,17 @@ app.use((req, res, next) => {
     console.log(endTime - startTime);
 })
 
+const watchman = (req, res, next) => {
+    if(req.url === '/contact'){
+        next();
+    }
+    else{
+        res.send('you are not allowed to access this page')
+    }
+}
+
+app.use(watchman);
+
 
 app.get('/', (req ,res) => {
     console.log('hello i am from base route');
