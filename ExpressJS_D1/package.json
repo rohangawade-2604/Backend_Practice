@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon SimpleMiddleWare.js"
+    "start": "nodemon SimpleMiddleWare.js",
+    "start1": "nodemon TimeTakenWare.js"
   },
   "keywords": [],
   "author": "",
